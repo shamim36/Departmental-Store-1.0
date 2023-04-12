@@ -8,7 +8,7 @@ public class Cloth extends Welcome_menu {
     @Override
     public void welcome(){
         System.out.println("-----------------------------------------------------------");
-        System.out.println("--                      Product_type.Cloth Menu                       --");
+        System.out.println("--                      Cloth Menu                       --");
         System.out.println("-----------------------------------------------------------");
         System.out.println("\t1. T-Shirt");
         System.out.println("\t2. Jeans");
@@ -68,7 +68,7 @@ public class Cloth extends Welcome_menu {
                 cloth_size();
                 break;
             case 4:
-                System.out.println("You have selected Exit");
+                System.out.println("You have selected Exit from Cloth Menu");
                 break;
             default:
                 System.out.println("Invalid choice");
