@@ -1,14 +1,16 @@
 package Welcoming_window;
 
-public class Welcome_menu {
-    private int choice;
+
+
+public class Welcome_menu{
+    public int choice1;
 
     public int getChoice() {
-        return choice;
+        return choice1;
     }
 
-    public void setChoice(int choice) {
-        this.choice = choice;
+    public void setChoice(int choice1) {
+        this.choice1 = choice1;
     }
 
 
@@ -22,9 +24,9 @@ public class Welcome_menu {
 
     public static void menu_option(){
 
-        System.out.println("\t1. Product_type.Cloth For Boys");
-        System.out.println("\t2. Product_type.Technology");
-        System.out.println("\t3. Product_type.Grocery");
+        System.out.println("\t1. Cloth For Boys");
+        System.out.println("\t2. Technology");
+        System.out.println("\t3. Grocery");
         System.out.println("\t4. Exit\n");
         System.out.println("-----------------------------------------------------------");
     }
