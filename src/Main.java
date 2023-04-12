@@ -3,10 +3,14 @@ import Product_type.Grocery;
 import Product_type.Technology;
 import Welcoming_window.Welcome_menu;
 
+
+
 import java.util.Scanner;
 
 public class Main extends Welcome_menu {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception {
+
+
         double price = 0.00;
         double total_price = 0.00;
         Scanner in = new Scanner(System.in);
@@ -33,6 +37,15 @@ public class Main extends Welcome_menu {
                     cloth.setChoice(in.nextInt());
                     cloth.cloth_option_menu(cloth.getChoice());
 
+                    if(cloth.getChoice()==4){
+                        System.out.println();
+
+                        System.out.println("\t---------------------------------------");
+                        System.out.println("\t| You have spent " + total_price + "tk|");
+                        System.out.println("\t---------------------------------------");
+                        break;
+                    }
+
                     //already called cloth_size_menu() in cloth class
                     System.out.print("Enter your choice: ");
                     cloth.setChoice(in.nextInt());
@@ -53,6 +66,15 @@ public class Main extends Welcome_menu {
                     System.out.print("Enter your choice: ");
                     technology.setChoice(in.nextInt());
                     technology.technology_option_menu(technology.getChoice());
+
+                    if(technology.getChoice()==4){
+                        System.out.println();
+
+                        System.out.println("\t---------------------------------------");
+                        System.out.println("\t| You have spent " + total_price + "tk|");
+                        System.out.println("\t---------------------------------------");
+                        break;
+                    }
 
                     System.out.print("Enter your choice: ");
                     technology.setChoice(in.nextInt());
@@ -75,6 +97,7 @@ public class Main extends Welcome_menu {
                 case 3:
                     grocery.grocery_option_menu();
                     price = grocery.total_price;
+
                     if(price>0.00){
                         total_price += price;
                         price = 0.00;
