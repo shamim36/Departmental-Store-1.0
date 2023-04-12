@@ -8,7 +8,7 @@ public class Grocery extends Welcome_menu {
     @Override
     public void welcome(){
         System.out.println("-----------------------------------------------------------");
-        System.out.println("--                     Product_type.Grocery Menu                      --");
+        System.out.println("--                     Grocery Menu                      --");
         System.out.println("-----------------------------------------------------------");
         System.out.println("\t1. Fish & Meat");
         System.out.println("\t2. Dairy & Eggs");
@@ -118,7 +118,7 @@ public class Grocery extends Welcome_menu {
                     total_price += grocery.oil_fat_menu(choice);
                     break;
                 case 4:
-                    System.out.println("You have selected to exit from Product_type.Grocery Menu");
+                    System.out.println("You have selected to exit from Grocery Menu");
                     break;
                 default:
                     System.out.println("You have selected an invalid option");
