@@ -3,14 +3,14 @@ package Welcoming_window;
 
 
 public class Welcome_menu{
-    public int choice1;
+    public int choice;
 
     public int getChoice() {
-        return choice1;
+        return choice;
     }
 
-    public void setChoice(int choice1) {
-        this.choice1 = choice1;
+    public void setChoice(int choice) {
+        this.choice = choice;
     }
 
 
