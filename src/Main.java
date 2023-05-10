@@ -5,15 +5,53 @@ import Welcoming_window.Welcome_menu;
 
 
 
+
 import java.util.Scanner;
 
 public class Main extends Welcome_menu {
     public static void main(String[] args) throws Exception {
+        // Login Option Start
+        Scanner in = new Scanner(System.in);
+        System.out.println("**Do not Enter Space as an Username or Password**");
+        System.out.println("**You can only attempt to Log in 3 times at a single time**");
+        System.out.println();
+        int trial = 1;
+        while (trial<4) {
+            System.out.println("Attempt Number "+trial);
+            System.out.print("Enter Username : ");
+            String username = in.next();
+            System.out.print("Enter Password : ");
+            String password = in.next();
+            if (username.equals("user")) {
+                if (password.equals("user")) {
+                    System.out.println();
+                    System.out.println("Login Successful");
+                    System.out.println();
+                    break;
+                } else {
+                    System.out.println("Incorrect Password");
+                    System.out.println("Try Again!!");
+                    System.out.println();
+                }
+            } else {
+                System.out.println("Username does not Exist");
+                System.out.println("Try Again!!");
+                System.out.println();
+            }
+            trial++;
+            if(trial>3){
+                System.out.println();
+                System.out.println("Sorry!! You have tried too Many times");
+                System.out.println("#Program Termination SuccessFull#");
+                return;
+            }
+        }
 
+        ////Login option end
 
         double price = 0.00;
         double total_price = 0.00;
-        Scanner in = new Scanner(System.in);
+
 
 
 

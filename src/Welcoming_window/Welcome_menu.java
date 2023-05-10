@@ -1,8 +1,6 @@
 package Welcoming_window;
 
-
-
-public class Welcome_menu{
+public class Welcome_menu {
     public int choice;
 
     public int getChoice() {
