@@ -1,4 +1,4 @@
-# Departmental-Store-2.0 (JAVA CONCEPT)
+# Departmental-Store-1.0 (JAVA CONCEPT)
 ------------------------------
 Name : Md Shamim Ahamed
 
